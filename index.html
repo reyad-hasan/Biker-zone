@@ -10,7 +10,8 @@
     <!-- google font poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Poppins:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- tailwind and daisy ui cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -34,12 +35,17 @@
         .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
+
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+
+        }
     </style>
 </head>
 
 <body class="font-poppins">
     <!-- header section -->
-    <header class="md:container md:mx-auto pr-4 md:pr-0">
+    <header class="md:container md:mx-auto pr-4 md:pr-0  mx-5 lg:mx-0 ">
         <!-- navbar section -->
         <nav>
             <div class="navbar bg-base-100 my-2 md:my-5 lg:px-5 xl:px-0">
@@ -262,9 +268,9 @@
         <!-- happy clients section -->
         <section class="my-16 lg:my-32">
             <!-- title section -->
-            <div>
-                <h1 class="text-4xl mx-5 lg:mx-0 lg:text-5xl font-bold text-black text-center">Happy <span
-                        class="text-bikePrimary">Clients says</span></h1>
+            <div class="md:flex justify-center gap-2 text-center">
+                <h1 class="text-4xl lg:mx-0 lg:text-5xl font-bold text-black">Happy</h1>
+                <h1 class="text-4xl lg:mx-0 lg:text-5xl font-bold text-bikePrimary">Clients says</h1>
             </div>
             <!-- clients container -->
             <div class="flex flex-col gap-8 xl:gap-14 lg:flex-row justify-between mt-10 xl:mt-14 xl:mx-28 px-5">
@@ -415,7 +421,39 @@
         </section>
     </main>
     <!-- footer section -->
-    <footer></footer>
+    <footer class="bg-black font-manrope">
+        <!-- footer main container -->
+        <section class="md:container md:mx-auto py-16 flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between px-5">
+            <!-- footer first contend -->
+            <div>
+                <!-- line one -->
+                <div class="text-white text-sm space-x-7 mb-4">
+                    <a href="#">Download Now</a>
+                    <a href="#">License</a>
+                </div>
+                <!-- line two -->
+                <div class="text-white text-sm mb-5 flex flex-wrap gap-6">
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Help</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- line three -->
+                <div>
+                    <p class="text-gray-400 text-sm hidden lg:flex">© 2020 bike. All rights reserved</p>
+                </div>
+            </div>
+            <!-- footer second contend -->
+            <div>
+                <h4 class="text-gray-200 text-xl">Get the App</h4>
+                <div><a href="#"><img src="./images/others/ios.png" alt="" class="w-2/3 mt-4"></a></div>
+                <div><a href="#"><img src="./images/others/android.png" alt="" class="w-2/3 mt-4"></a></div>
+            </div>
+            <p class="text-gray-400 text-sm text-center lg:hidden">© 2020 bike. All rights reserved</p>
+        </section>
+    </footer>
 </body>
 
 </html>
