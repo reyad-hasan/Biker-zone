@@ -7,14 +7,75 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/icons/star-regular.svg" type="image/x-icon">
     <title>Biker Zone</title>
+    <!-- google font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- tailwind and daisy ui cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bikePrimary: '#E76F51',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom styles -->
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-poppins">
     <!-- header section -->
-    <header></header>
+    <header class="md:container md:mx-auto pr-4 md:pr-0">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost lg:hidden hover:bg-bikePrimary hover:text-white duration-300 mr-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+                            <li><a class="hover:text-white hover:bg-bikePrimary">Home</a></li>
+                            <li><a class="hover:text-white hover:bg-bikePrimary">Shop</a></li>
+                            <li><a class="hover:text-white hover:bg-bikePrimary">News</a></li>
+                            <li><a class="hover:text-white hover:bg-bikePrimary">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl hover:bg-bikePrimary hover:text-white text-black duration-300">Bike
+                        zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base text-black gap-5">
+                        <li><a class="hover:text-white hover:bg-bikePrimary">Home</a></li>
+                        <li><a class="hover:text-white hover:bg-bikePrimary">Shop</a></li>
+                        <li><a class="hover:text-white hover:bg-bikePrimary">News</a></li>
+                        <li><a class="hover:text-white hover:bg-bikePrimary">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="ml-5">
+                    <a class="btn bg-bikePrimary text-white hover:text-bikePrimary hover:bg-white">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- main section -->
     <main></main>
     <!-- footer section -->
