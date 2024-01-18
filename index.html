@@ -23,6 +23,7 @@
                     colors: {
                         clifford: '#da373d',
                         bikePrimary: '#E76F51',
+                        bikePrimaryBg: 'rgba(231, 111, 81, 0.10)',
                     }
                 }
             }
@@ -39,8 +40,9 @@
 <body class="font-poppins">
     <!-- header section -->
     <header class="md:container md:mx-auto pr-4 md:pr-0">
+        <!-- navbar section -->
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 my-2 md:my-5 lg:px-5 xl:px-0">
                 <div class="flex-1">
                     <div class="dropdown">
                         <div tabindex="0" role="button"
@@ -75,6 +77,111 @@
                 </div>
             </div>
         </nav>
+        <!-- slider section -->
+        <section>
+            <div class="carousel w-full lg:h-[550px] bg-bikePrimaryBg xl:mt-24">
+                <!-- slider 1 -->
+                <div id="slide1" class="carousel-item py-5 md:py-10 relative w-full">
+                    <div class="flex flex-col lg:flex-row p-6 lg:p-32 gap-10">
+                        <div class="flex-1 text-center lg:text-left xl:flex xl:items-center">
+                            <div class="space-y-3 lg:space-y-5 ">
+                                <h1 class="text-4xl lg:text-5xl xl:text-7xl font-bold text-black">Ride-on R15 V4 <br>
+                                    with
+                                    Smile</h1>
+                                <p class="text-black">Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button><a
+                                        class="btn bg-bikePrimary text-white hover:text-bikePrimary hover:bg-white">Purchase</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center lg:justify-end">
+                            <img src="./images/slider/bike1.png" class="w-3/4 lg:w-full xl:w-3/4" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider 2 -->
+                <div id="slide2" class="carousel-item py-5 md:py-10 relative w-full">
+                    <div class="flex flex-col lg:flex-row p-6 lg:p-32 gap-10">
+                        <div class="flex-1 text-center lg:text-left xl:flex xl:items-center">
+                            <div class="space-y-3 lg:space-y-5">
+                                <h1 class="text-4xl lg:text-5xl xl:text-7xl font-bold text-black">Ride-on R15 V4 <br>
+                                    with
+                                    Smile</h1>
+                                <p class="text-black">Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button><a
+                                        class="btn bg-bikePrimary text-white hover:text-bikePrimary hover:bg-white">Purchase</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center lg:justify-end">
+                            <img src="./images/slider/bike2.png" class="w-3/4 lg:w-full xl:w-3/4" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider 3 -->
+                <div id="slide3" class="carousel-item py-5 md:py-10 relative w-full">
+                    <div class="flex flex-col lg:flex-row p-6 lg:p-32 gap-10">
+                        <div class="flex-1 text-center lg:text-left xl:flex xl:items-center">
+                            <div class="space-y-3 lg:space-y-5 ">
+                                <h1 class="text-4xl lg:text-5xl xl:text-7xl font-bold text-black">Ride-on R15 V4 <br>
+                                    with
+                                    Smile</h1>
+                                <p class="text-black">Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button><a
+                                        class="btn bg-bikePrimary text-white hover:text-bikePrimary hover:bg-white">Purchase</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center lg:justify-end">
+                            <img src="./images/slider/bike3.png" class="w-3/4 lg:w-full xl:w-3/4" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider 4 -->
+                <div id="slide4" class="carousel-item py-5 md:py-10 relative w-full">
+                    <div class="flex flex-col lg:flex-row p-6 lg:p-32 gap-10">
+                        <div class="flex-1 text-center lg:text-left xl:flex xl:items-center">
+                            <div class="space-y-3 lg:space-y-5 ">
+                                <h1 class="text-4xl lg:text-5xl xl:text-7xl font-bold text-black">Ride-on R15 V4 <br>
+                                    with
+                                    Smile</h1>
+                                <p class="text-black">Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button><a
+                                        class="btn bg-bikePrimary text-white hover:text-bikePrimary hover:bg-white">Purchase</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center lg:justify-end">
+                            <img src="./images/slider/bike4.png" class="w-3/4 lg:w-full xl:w-3/4" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <!-- main section -->
     <main></main>
